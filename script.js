@@ -86,6 +86,9 @@ console.log(myName);
 // * درون ""یا '' عدد قرار بگیرد درواقع استرینگ محسوب می شود 
 // * qutation inside qutation
 let herDog="her dog's name is eco";
+// کل عبارت خط بالا Expression
+//  عبارت داخل"" است که در واقع به متغیرها(ورایبل) منتسب(اساین) می شود Statement 
+// Statements asign to varibles
 console.log(herDog);
 // or with \ slash
 console.log (herDog='her dog\'s name is eco');
@@ -132,6 +135,38 @@ console.log(alphabet2.indexOf(''));
 // output = 0
 console.log(alphabet2.indexOf(' '));
 // output = 3
+
+// *برای برش دادن یک متن
+console.log (animal='morghe sahar')
+console.log(animal.slice(3))
+// output = ghe sahar
+console.log(animal.slice(7,12));
+// output = sahar
+console.log(animal.slice(-5));
+// output = sahar
+
+// *  برای جایگزین کردن یک حرف یا یک کلمه . در این متد به جای اولین حرف یاکلمه ای که مچ شود می نشیند.
+console.log(favorit='my favorit sport is Chess. but i like Chess too.')
+console.log(favorit.replace('Chess', 'Yoga'))
+console.log(favorit.replaceAll("Chess", "Yoga"));
+
+//  استفاده می شود (مطالعه شخصی) RegExp برای جایگزین کردن باهم از
+
+// * برای تکرار کردن
+console.log(myName.repeat(4))
+// output = SaraSaraSaraSara
+
+// *backtick
+console.log(newUser='Rahman')
+console.log(greeting='welcome '+newUser)
+console.log(anothergreeting='welcome ${newUser}')
+console.log(anothergreeting=`welcome 'Rahman' and "sara"`)
+// *concatenate(add)
+console.log(sport='skateboard')
+console.log(sport.slice(5).replace('o','e'))
+
+
+
 
 
 
