@@ -1,10 +1,3 @@
-//         let randomNumber=Math.round(Math.random()*50);
-// let randomNumber = Math.round(Math.random() * 50);
-// console.log(randomNumber)
-
-
-
-
 
 /*  برای به دست آوردن دقیق رزولوشن گوشی وارد این سایت شوید
 gsmarena.com
@@ -15,6 +8,12 @@ ppi= pixcel per inch
 mobile resolution for website
 یه سری اطلاعات کلی برای اندازه های استاندارد می آورد  */
 
+// *JavaScript provides eight different data types which are
+// * undefined, null, boolean, string, symbol, bigint, number, and object.
+
+
+// *In JavaScript we end statements with semicolons. Variable names can be made up of numbers, letters, and $ or _, but may not contain spaces or start with a number.
+
 
 // ?what is JS?
 // * یک زبان برنامه نویسی است که در فرانت و بک استفاده می شود.
@@ -23,8 +22,8 @@ mobile resolution for website
 // برای جی اس حتما از کنسول روم استفاده کنید ولی برای سی اس اس از دوتول فایرفاکس استفاده کنید.
 // *در مورد اعداد در جی اس فقط اعداد داریم و لازم نیست چیزی را دسته بندی کنیم مثلا به اعداد صحیح یا حسابی یا...
 // ?  عملیات منطقی 
-// *  PLUS +    MINES -   *    **  /   %
-// *   % این یعنی باقی مانده تقسیم برای مثال
+// *    PLUS +    MINES -   multiply *    **  divide /   remainder % 
+// *   % این یعنی باقی مانده تقسیم برای مثال gives the remainder of the division of two numbers.
 console.log(15%2);
 // output= 1
 // *NaN  --> Not a Number
@@ -35,7 +34,7 @@ console.log(15%2);
 let myAge=33;
 console.log(myAge=myAge+2);
 // output =myAge = 35
-// * 2-const   اگر با این متغیری را تعریف کنیم ثابت می ماند
+// * 2-const    اگر با این متغیری را تعریف کنیم ثابت می ماند و معمولا با حروف بزرگ نامگذاری می شود.
 const myHight = 170;
 console.log(myHight + 10);
 // output = 180
@@ -47,18 +46,18 @@ console.log(myWieght=myWieght+10);
 // output = myWieght = 68
 // ? دیگر عملیات منطقی
 // * ++ plus plus     یک واحد اضافه می کند و همچنین متغیر را معادل با آن قرار می دهد.
-// * myAge++   =   myAge+=1(plus, equall)    سن مرا 1 واحد اضافه کن و معادل با سن من قرار بده.
-console.log (myAge=myAge++);
+// * myAge++   =   myAge+=1(plus, equall)  =    myAge=myAge+1    سن مرا 1 واحد اضافه کن و معادل با سن من قرار بده.
+console.log (myAge++);
 // output = 35
 // به حالت دیگری هم نوشته می شود.
-console.log(myAge=++myAge);
-// output = 36 
+console.log(++myAge);
+// output = 37 
 // * -- mines mines     یک واحد کم می کند و همچنین متغیر را معادل با آن قرار می دهد.
 // * myAge--   =   myAge-=1(mines, equall)    سن مرا 1 واحد کم کن و معادل با سن من قرار بده.
-console.log (myAge=myAge--);
-// output = 36
+console.log (myAge--);
+// output = 37
 // به حالت دیگری هم نوشته می شود.
-console.log(myAge=--myAge);
+console.log(--myAge);
 // output = 35 
 // ! سوال بزرگ اینکه وقتی در کنسول این عملیات را انجام میدهم ++ یا -- بعد از دوبار خواندن متغیر نتیجه را درست نشان می دهد اما در وی اس کد اینطور نیست؟
 // * /=
@@ -78,7 +77,10 @@ console.log(myAge=--myAge);
  *   3-از یک حرف برای نامگذاری متغیر استفاده نکنید بلکه نام کامل بنویسد
  *   4- isUser=woman
  */
+// *Write variable names in JavaScript in camelCase. In camelCase, multi-word variable names have the first word in lowercase and the first letter of each subsequent word is capitalized.
+
 // * string یک سری متن هستند از انواع دیتا تایپ ها هستند
+// * A string literal, or string, is a series of zero or more characters enclosed in single or double quotes.
 let myName = "Sara";
 // * این مقدار باید در "" یا در '' قرار بگیره منتها در هر کدوم که قرار بگیره تا آخر کدنویسی باید همون در نظر گرفته بشه.
 console.log(myName);
