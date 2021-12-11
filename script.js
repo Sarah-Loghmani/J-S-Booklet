@@ -156,14 +156,63 @@ console.log(favorit.replaceAll("Chess", "Yoga"));
 console.log(myName.repeat(4))
 // output = SaraSaraSaraSara
 
-// *backtick
 console.log(newUser='Rahman')
+// output=Rahman
 console.log(greeting='welcome '+newUser)
-console.log(anothergreeting='welcome ${newUser}')
+// output=welcome Rahman
+// *backtick
+console.log((anothergreeting = `welcome ${newUser}`));
+// output=welcome Rahman
 console.log(anothergreeting=`welcome 'Rahman' and "sara"`)
+// welcome 'Rahman' and "sara"
 // *concatenate(add)
 console.log(sport='skateboard')
+// output=skateboard
 console.log(sport.slice(5).replace('o','e'))
+// output=beard
+// * Null  به صورت عمدی مقدار متغیری را نول قرار می دهیم تا بعدا آن را تغییر دهیم
+// * Undefined  این اروری ست که خود جاوا از کد میگیرد
+console.log(mySureName=null)
+// output=null
+
+// *Math Method
+// به صورت رندوم بین 0 تا 1 عددی را انتخاب می کند
+console.log(Math.random())
+// output=0.4838536879235882
+
+// به صورت رندوم بین 0 تا100  عددی را انتخاب می کند
+console.log(Math.random()*100);
+// output=84.17731359986095
+
+// عدد را گرد می کند که در این عدد چون کمتر از 0.5 است به سمت پایین گرد شده اس
+console.log(Math.round(3.4))
+// output=3
+
+// عدد را گرد می کند که در این عدد چون بیشتر از 0.5 است به سمت بالا گرد شده اس
+console.log(Math.round(3.6));
+// output=4
+
+console.log(Math.round())
+// output=NaN
+
+console.log(Math.round(Math.random()*95)+5);
+// اعداد صحیح بین 5 تا 100
+
+console.log(Math.PI)
+// عدد پی
+console.log(Math.abs(-50))
+// مثبت می کند
+
+console.log(Math(2,2))
+// ! این برای به توان رساندنه که کار نم کنه
+
+
+
+
+
+
+
+
 
 
 
