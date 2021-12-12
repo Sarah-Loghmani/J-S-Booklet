@@ -84,8 +84,24 @@ console.log(--myAge);
 let myName = "Sara";
 // * این مقدار باید در "" یا در '' قرار بگیره منتها در هر کدوم که قرار بگیره تا آخر کدنویسی باید همون در نظر گرفته بشه.
 console.log(myName);
-// !چرا  توی پرانتز خط خورد
+
 // * درون ""یا '' عدد قرار بگیرد درواقع استرینگ محسوب می شود 
+
+// *Escape Sequences in Strings
+/*   \'	single quote
+      \"	double quote
+      \\	backslash
+      \n	newline
+      \r	carriage return
+      \t	tab
+      \b	word boundary
+      \f	form feed */
+      const myStr = "FirstLine\n\t\\SecondLine\nThirdLine";
+      console.log(myStr)
+      /* output=FirstLine
+	               \SecondLine
+               ThirdLine     
+                */
 // * qutation inside qutation
 let herDog="her dog's name is eco";
 // کل عبارت خط بالا Expression
@@ -104,6 +120,8 @@ console.log(myName[0]);
 // output = s
 console.log(myName[2]);
 // output = r
+console.log(lastLetter=myName[myName.length - 1])
+// output = a
 // *name.length مقدار کاراکترهای داخل استرینگ را اعلام میکند
 console.log(myName.length);
 // output =4
@@ -167,6 +185,7 @@ console.log((anothergreeting = `welcome ${newUser}`));
 // output=welcome Rahman
 console.log(anothergreeting=`welcome 'Rahman' and "sara"`)
 // welcome 'Rahman' and "sara"
+
 // *concatenate(add)
 console.log(sport='skateboard')
 // output=skateboard
