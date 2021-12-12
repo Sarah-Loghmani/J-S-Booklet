@@ -12,7 +12,7 @@ mobile resolution for website
 // * undefined, null, boolean, string, symbol, bigint, number, and object.
 
 
-// *In JavaScript we end statements with semicolons. Variable names can be made up of numbers, letters, and $ or _, but may not contain spaces or start with a number.
+// *In JavaScript we end statements with semicolons.Variable names can be made up of numbers, letters, and $ or _, but may not contain spaces or start with a number.
 
 
 // ?what is JS?
@@ -32,6 +32,7 @@ console.log(15%2);
 // * این متغیرها سه حالت دارند
 // * 1-let  اگر با این متغیری را تعریف کنی بعدا می توانی عوضش کنی
 let myAge=33;
+console.log(typeof myAge);
 console.log(myAge=myAge+2);
 // output =myAge = 35
 // * 2-const    اگر با این متغیری را تعریف کنیم ثابت می ماند و معمولا با حروف بزرگ نامگذاری می شود.
@@ -120,8 +121,16 @@ console.log(myName[0]);
 // output = s
 console.log(myName[2]);
 // output = r
+// Use bracket notation to find the last character in the string.
 console.log(lastLetter=myName[myName.length - 1])
 // output = a
+// Use bracket notation to find the nth-to-last character in the string.
+console.log((third-to-last-Letter = myName[myName.length - 3]));
+
+// multi-dimensional array.
+
+
+
 // *name.length مقدار کاراکترهای داخل استرینگ را اعلام میکند
 console.log(myName.length);
 // output =4
