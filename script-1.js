@@ -12,59 +12,101 @@ mobile resolution for website
 // * undefined, null, boolean, string, symbol, bigint, number, and object.
 
 
-// *In JavaScript we end statements with semicolons.Variable names can be made up of numbers, letters, and $ or _, but may not contain spaces or start with a number.
+// *In JavaScript we end statements with semicolons.
+// *Variable names can be made up of numbers, letters, and $ or _, but may not contain spaces or start with a number.
 
 
 // ?what is JS?
 // * یک زبان برنامه نویسی است که در فرانت و بک استفاده می شود.
+
 // ? console in inspect
 // * یک پلتفرم است که داخل آن کدهای جی اس ران(اجرا) میشود
-// برای جی اس حتما از کنسول روم استفاده کنید ولی برای سی اس اس از دوتول فایرفاکس استفاده کنید.
-// *در مورد اعداد در جی اس فقط اعداد داریم و لازم نیست چیزی را دسته بندی کنیم مثلا به اعداد صحیح یا حسابی یا...
-// ?  عملیات منطقی 
-// *    PLUS +    MINES -   multiply *    **  divide /   remainder % 
-// *   % این یعنی باقی مانده تقسیم برای مثال gives the remainder of the division of two numbers.
+
+// برای جی اس حتما از کنسول کروم استفاده کنید ولی برای سی اس اس از دِوتولِ فایرفاکس استفاده کنید.
+
+//* در مورد نامبرز در جی اس فقط اعداد داریم و لازم نیست چیزی را دسته بندی کنیم مثلا به اعداد صحیح یا اعشاری یا غیره
+
+// ?  عملیات منطقی MATH OPERATIONS
+// *    (PLUS +)   ( MINES -)   (multiply *)    ( **)   (divide / )   (remainder % )    (NaN)
+
+// *  %  این یعنی باقی مانده تقسیم gives the remainder of the division of two numbers.
 console.log(15%2);
 // output= 1
+
 // *NaN  --> Not a Number
+console.log(Math.round())
+// output=NaN
+
+
+
 // ?variables
-// * یعنی متغیرها مثل لیبل هستند که می توان در آن داده هایی قرار داد مثل اعداد و غیره و بعدا جایی که لازم باشد استفاده کرد و یا تغییر داد
-// * این متغیرها سه حالت دارند
-// * 1-let  اگر با این متغیری را تعریف کنی بعدا می توانی عوضش کنی
-let myAge=33;
+/*  متغیرها مثل لیبل هستند که می توان در آن داده هایی قرار داد مثل اعداد و غیره 
+و بعدا جایی که لازم باشد استفاده کرد و یا تغییر داد*/
+
+// * این متغیرها از طریق سه کانتر نوشته می شوند
+// * 1-let   
+/*اگر با این متغیری را تعریف کنی بعدا می توانی عوضش کنی
+ ولازم نیست حتما از اول به آن مقدار بدهیم*/
+let myAge;
+myAge = 33;
 console.log(typeof myAge);
 console.log(myAge=myAge+2);
-// output =myAge = 35
-// * 2-const    اگر با این متغیری را تعریف کنیم ثابت می ماند و معمولا با حروف بزرگ نامگذاری می شود.
+// output =myAge = 3
+// * 2-const     
+/*اگر با این متغیری را تعریف کنیم ثابت می ماند 
+و معمولا با حروف بزرگ نامگذاری می شود.
+و باید حتما از ابتدا با مقدار مشخصی تعریف شود.*/
 const myHight = 170;
 console.log(myHight + 10);
 // output = 180
 // console.log(myHight=myHight+10)
 // output = error
-// * 3-var  این برای ورژن های قدیمی استفاده می شود پس از این استفاد نکنید . یک چیزی مثل متغیر حالت اول است.
+// * 3-var  
+/*این برای ورژن های قدیمی استفاده می شده
+ پس از این استفاد نکنید . یک چیزی مثل متغیر حالت اول است.*/
 var myWieght=58;
 console.log(myWieght=myWieght+10);
 // output = myWieght = 68
+
+
+
+//    * Best practice
+/**  1-We may not start a variable name with a digit
+ *   2- استفاده شود camelcase از  familyName   حرف اول کلمه های دوم به بعد کپیتال باشد
+ *   3-Use good names / Do not use one-word namesاز یک حرف برای نامگذاری متغیر استفاده نکنید بلکه نام کامل بنویسد
+ *   4- You can use ”is” at the first of Boolean variable: 
+ *   (isLoggedIn = true;)
+      isUser=woman
+ */
+
+
+
 // ? دیگر عملیات منطقی
-// * ++ plus plus     یک واحد اضافه می کند و همچنین متغیر را معادل با آن قرار می دهد.
-// * myAge++   =   myAge+=1(plus, equall)  =    myAge=myAge+1    سن مرا 1 واحد اضافه کن و معادل با سن من قرار بده.
+// * ++ plus plus     
+//یک واحد اضافه می کند و همچنین متغیر را معادل با آن قرار می دهد.
+/* myAge++   =   myAge+=1(plus, equall)  =    myAge=myAge+1    
+سن مرا 1 واحد اضافه کن و معادل با سن من قرار بده.*/
 console.log (myAge++);
 // output = 35
 // به حالت دیگری هم نوشته می شود.
 console.log(++myAge);
 // output = 37 
-// * -- mines mines     یک واحد کم می کند و همچنین متغیر را معادل با آن قرار می دهد.
-// * myAge--   =   myAge-=1(mines, equall)    سن مرا 1 واحد کم کن و معادل با سن من قرار بده.
+// * -- mines mines     
+// یک واحد کم می کند و همچنین متغیر را معادل با آن قرار می دهد.
+/* myAge--   =   myAge-=1(mines, equall)    =    myAge=myAge-1    
+سن مرا 1 واحد کم کن و معادل با سن من قرار بده.*/
 console.log (myAge--);
 // output = 37
 // به حالت دیگری هم نوشته می شود.
 console.log(--myAge);
 // output = 35 
 // ! سوال بزرگ اینکه وقتی در کنسول این عملیات را انجام میدهم ++ یا -- بعد از دوبار خواندن متغیر نتیجه را درست نشان می دهد اما در وی اس کد اینطور نیست؟
-// * /=
+// * /=  divide equall
+
+
 
 // * Booleans  true or false data types 
-// * که برای مقایسه کردن استفاده می شوند.
+// که برای مقایسه کردن استفاده می شوند.
 /* 2>3
    false
    3>2
@@ -125,11 +167,7 @@ console.log(myName[2]);
 console.log(lastLetter=myName[myName.length - 1])
 // output = a
 // Use bracket notation to find the nth-to-last character in the string.
-console.log((third-to-last-Letter = myName[myName.length - 3]));
-
-// multi-dimensional array.
-
-
+console.log((thirdToLastLetter = myName[myName.length - 3]));
 
 // *name.length مقدار کاراکترهای داخل استرینگ را اعلام میکند
 console.log(myName.length);
@@ -233,7 +271,7 @@ console.log(Math.PI)
 console.log(Math.abs(-50))
 // مثبت می کند
 
-console.log(Math(2,2))
+console.log(Math.pow(2,2))
 // ! این برای به توان رساندنه که کار نم کنه
 
 
