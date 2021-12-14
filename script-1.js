@@ -27,7 +27,7 @@ mobile resolution for website
 //* در مورد نامبرز در جی اس فقط اعداد داریم و لازم نیست چیزی را دسته بندی کنیم مثلا به اعداد صحیح یا اعشاری یا غیره
 
 // ?  عملیات منطقی MATH OPERATIONS
-// *    (PLUS +)   ( MINES -)   (multiply *)    ( **)   (divide / )   (remainder % )    (NaN)
+// *    (PLUS +)   ( MINES -)   (multiply *)    ( توان **)   (divide / )   (remainder % )    (NaN)  (assignment  =)
 
 // *  %  این یعنی باقی مانده تقسیم gives the remainder of the division of two numbers.
 console.log(15%2);
@@ -40,15 +40,17 @@ console.log(Math.round())
 
 
 // ?variables
-/*  متغیرها مثل لیبل هستند که می توان در آن داده هایی قرار داد مثل اعداد و غیره 
+/*  متغیرها مثل لیبل هستند که 
+می توان در آن دیتاتایپی قرار داد مثل نامبر و استرینگ و غیره 
 و بعدا جایی که لازم باشد استفاده کرد و یا تغییر داد*/
 
-// * این متغیرها از طریق سه کانتر نوشته می شوند
+// * این متغیرها از طریق سه کی وورد نوشته می شوند
 // * 1-let   
 /*اگر با این متغیری را تعریف کنی بعدا می توانی عوضش کنی
  ولازم نیست حتما از اول به آن مقدار بدهیم*/
 let myAge;
 myAge = 33;
+//* Number is a data-type*/
 console.log(typeof myAge);
 console.log(myAge=myAge+2);
 // output =myAge = 3
@@ -61,7 +63,7 @@ console.log(myHight + 10);
 // output = 180
 // console.log(myHight=myHight+10)
 // output = error
-// * 3-var  
+// * 3-var (the old variable keyword)) 
 /*این برای ورژن های قدیمی استفاده می شده
  پس از این استفاد نکنید . یک چیزی مثل متغیر حالت اول است.*/
 var myWieght=58;
@@ -81,7 +83,9 @@ console.log(myWieght=myWieght+10);
 
 
 
-// ? دیگر عملیات منطقی
+// ? Counter variable ( ++ , -- , += , -= , *= , /=  , **=  ,  %=)
+/*نکته اینکه این ها برای کانست نامعتبر است
+  چرا که ما نمی توانیم مقدار اولیه کانست رو تغییر دهیم*/
 // * ++ plus plus     
 //یک واحد اضافه می کند و همچنین متغیر را معادل با آن قرار می دهد.
 /* myAge++   =   myAge+=1(plus, equall)  =    myAge=myAge+1    
@@ -101,11 +105,10 @@ console.log (myAge--);
 console.log(--myAge);
 // output = 35 
 // ! سوال بزرگ اینکه وقتی در کنسول این عملیات را انجام میدهم ++ یا -- بعد از دوبار خواندن متغیر نتیجه را درست نشان می دهد اما در وی اس کد اینطور نیست؟
-// * /=  divide equall
 
 
 
-// * Booleans  true or false data types 
+// * Booleans  true or false data-types 
 // که برای مقایسه کردن استفاده می شوند.
 /* 2>3
    false
@@ -122,7 +125,7 @@ console.log(--myAge);
  */
 // *Write variable names in JavaScript in camelCase. In camelCase, multi-word variable names have the first word in lowercase and the first letter of each subsequent word is capitalized.
 
-// * string یک سری متن هستند از انواع دیتا تایپ ها هستند
+// * string یک سری دیتا تایپ به صورت متن هستند
 // * A string literal, or string, is a series of zero or more characters enclosed in single or double quotes.
 let myName = "Sara";
 // * این مقدار باید در "" یا در '' قرار بگیره منتها در هر کدوم که قرار بگیره تا آخر کدنویسی باید همون در نظر گرفته بشه.
@@ -271,7 +274,7 @@ console.log(Math.PI)
 console.log(Math.abs(-50))
 // مثبت می کند
 
-console.log(Math.pow(2,2))
+console.log(Math.pow(2,3))
 
 
 
