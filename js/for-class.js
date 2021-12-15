@@ -4,9 +4,22 @@
 // * یک پلتفرم است که داخل آن کدهای جی اس ران(اجرا) میشود
 
 
+
+
+
+
 // *JavaScript provides eight different data types which are
 // * undefined, null, boolean, string, number , 
 // symbol, bigint,  and object.
+
+
+
+
+
+
+
+
+
 
 
 // ?variables
@@ -21,6 +34,40 @@ that we can:
 – Or change it later on
 */
 
+
+
+
+
+// *  key words for variables-->
+// * 1-var (the old variable keyword) 
+/*این برای ورژن های قدیمی استفاده می شده
+ پس از این استفاد نکنید . یک چیزی مثل متغیر حالت اول است.*/
+//  let myName="sara";
+//  console.log(myName);
+
+ // * 2-let   
+/*اگر با این متغیری را تعریف کنی بعدا می توانی عوضش کنی
+ ولازم نیست حتما از اول به آن مقدار بدهیم*/
+let myWeight = 58;
+console.log(myWeight)
+  console.log(myWeight = myWeight+10);
+// output = myWeight = 68
+/* Number is a data-type*/
+// console.log(typeof myWeight);
+// * 3-const     
+/*اگر با این متغیری را تعریف کنیم ثابت می ماند 
+و معمولا با حروف بزرگ نامگذاری می شود.
+و باید حتما از ابتدا با مقدار مشخصی تعریف شود.*/
+const myHight = 170;
+console.log(myHight);
+console.log(myHight + 10);
+// output = 180
+// console.log(myHight=myHight+10)
+// output = error
+console.log(myHight)
+
+
+
 // * Variable names can be made up of numbers, letters, and $ or _, but may not contain spaces or start with a number.
 /**  1-We may not start a variable name with a digit(number).
  *   2-  camelcase -->  familyName - myAge --> (multi-word variable names have the first word in lowercase and 
@@ -28,52 +75,26 @@ that we can:
  *   3-Use good names / Do not use one-word names
  *   4- You can use ”is” at the first of Boolean variable: 
  *   (isLoggedIn = true;)
-      isUser=woman
+      isUser = woman
  */
 // *Write variable names in JavaScript in camelCase. In camelCase, multi-word variable names have the first word in lowercase and the first letter of each subsequent word is capitalized.
+// * end statements with semicolons.
 
 
 
-      // * end statements with semicolons.
 
 
-
-// * 3 key word for variables-->
-// * 1-let   
-/*اگر با این متغیری را تعریف کنی بعدا می توانی عوضش کنی
- ولازم نیست حتما از اول به آن مقدار بدهیم*/
-let myAge;
-myAge = 33;/* Number is a data-type*/
-console.log(typeof myAge);
-console.log(myAge=myAge+2);
-// output =myAge = 3
-// * 2-const     
-/*اگر با این متغیری را تعریف کنیم ثابت می ماند 
-و معمولا با حروف بزرگ نامگذاری می شود.
-و باید حتما از ابتدا با مقدار مشخصی تعریف شود.*/
-const myHight = 170;
-console.log(myHight + 10);
-// output = 180
-// console.log(myHight=myHight+10)
-// output = error
-// * 3-var (the old variable keyword)) 
-/*این برای ورژن های قدیمی استفاده می شده
- پس از این استفاد نکنید . یک چیزی مثل متغیر حالت اول است.*/
-var myWieght=58;
-console.log(myWieght=myWieght+10);
-// output = myWieght = 68
 
 
 // * numbers: 
-/*      Positive 
-        numbers
-        Negatives 
-        numbers
-        Whole numbers 
-        (integers)
-        Decimal 
-        number
+/*      Positive numbers
+        Negatives numbers
+        Whole numbers (integers)
+        Decimal number
 */
+
+
+
 // * MATH OPERATIONS
 /*      • +    PLUS
         • -    MINES
@@ -81,8 +102,8 @@ console.log(myWieght=myWieght+10);
         • **  
         • /    divide
         • %    remainder  --> gives the remainder of the division of two numbers.*/
-               console.log(15%2);
-                // output= 1
+            console.log(15%2);
+            // output= 1
 /*                
         • NaN  Not a Number */
                console.log(Math.round())
@@ -91,27 +112,31 @@ console.log(myWieght=myWieght+10);
          • =    assignment 
 */                 
 
+
+
+
 // ? Counter variable ( ++ , -- , += , -= , *= , /=  , **=  ,  %=)
 /*نکته اینکه این ها برای کانست نامعتبر است
   چرا که ما نمی توانیم مقدار اولیه کانست رو تغییر دهیم*/
 // * ++ plus plus     
 //یک واحد اضافه می کند و همچنین متغیر را معادل با آن قرار می دهد.
-/* myAge++   =   myAge+=1(plus, equall)  =    myAge=myAge+1    
-سن مرا 1 واحد اضافه کن و معادل با سن من قرار بده.*/
-console.log (myAge++);
-// output = 35
+/* myWeight++   =   myWeight+=1(plus, equall)  =    myWeight=myWeight+1    
+وزن مرا 1 واحد اضافه کن و معادل با سن من قرار بده.*/
+// console.log (myWeight++);
+// output = 68
+// console.log(myWeight)
 // به حالت دیگری هم نوشته می شود.
-console.log(++myAge);
-// output = 37 
+console.log(++myWeight);
+// output = 60 
 // * -- mines mines     
 // یک واحد کم می کند و همچنین متغیر را معادل با آن قرار می دهد.
-/* myAge--   =   myAge-=1(mines, equall)    =    myAge=myAge-1    
+/* myWeight--   =   myWeight-=1(mines, equall)    =    myWeight=myWeight-1    
 سن مرا 1 واحد کم کن و معادل با سن من قرار بده.*/
-console.log (myAge--);
-// output = 37
+// console.log(myWeight--);
+// output = 58
 // به حالت دیگری هم نوشته می شود.
-console.log(--myAge);
-// output = 35 
+// console.log(--myWeight);
+// output = 56 
 
 
 // * string یک سری دیتا تایپ به صورت متن هستند
@@ -119,27 +144,30 @@ console.log(--myAge);
 let myName = "Sara";
 // * این مقدار باید در "" یا در '' قرار بگیره منتها در هر کدوم که قرار بگیره تا آخر کدنویسی باید همون در نظر گرفته بشه.
 console.log(myName);
+console.log(typeof myName)
+console.log(myName.length)
 
 // *عدد درون ""یا '' عدد قرار بگیرد درواقع استرینگ محسوب می شود 
 
 
 // *Escape Sequences in Strings
-/*   \'	single quote
+/*    \'	single quote
       \"	double quote
       \\	backslash
       \n	newline
-      \r	carriage return
       \t	tab
       \b	word boundary
-      \f	form feed */
-      const myStr = "FirstLine\n\t\\SecondLine\nThirdLine";
+ */
+      const myStr = "FirstLine\n\t\\SecondLine\nThirdLine\b";
       console.log(myStr)
       /* output=FirstLine
 	               \SecondLine
-               ThirdLine     
+                ThirdLine     
                 */
+
+
 // * qutation inside qutation
-let herDog="her dog's name is eco";
+let herDog = "her dog's name is eco";
 // کل عبارت خط بالا Expression
 //  عبارت داخل"" است که در واقع به متغیرها(ورایبل) منتسب(اساین) می شود Statement 
 // Statements asign to varibles
@@ -152,36 +180,48 @@ console.log(herDog=`her dog's name is eco`)
 
 
 // *strings are indexed and index start from 0
+// s-a-r-a
+// 0-1-2-3
 console.log(myName[0]);
 // output = s
 console.log(myName[2]);
 // output = r
+console.log(myName[-1]);
+
+
 // Use bracket notation to find the last character in the string.
-console.log(lastLetter=myName[myName.length - 1])
+let lastCharacter;
+console.log(lastCharacter=myName[myName.length-1]);
 // output = a
 // Use bracket notation to find the nth-to-last character in the string.
-console.log((thirdToLastLetter = myName[myName.length - 3]));
+// console.log((thirdToLastLetter = myName[myName.length - 3]));
 
 // *name.length مقدار کاراکترهای داخل استرینگ را اعلام میکند
 console.log(myName.length);
 // output =4
 
-// *concatenate(add)
-let familyName='Loghmani';
-let empty=' ';
-console.log((wholeName = myName + empty + familyName));
+
+
 // * string methods  هر دیتا تایپی چه نامبر چه استرینگ متدهایی دارند
-// *متدها یک سری کدهایی هستند که توسط خود جاواو پیش نویس شدند و یک سری عملیات انجام می دهند.
-// .method()
-console.log(upperCaseSara = myName.toUpperCase());
+// *متدها یک سری کدهایی هستند که توسط خود جاواسکریپت و پیش نویس شدند و یک سری عملیات انجام می دهند.
+
+// varieble . method()
+
+// * to UpperCase
+// let k = myName.toUpperCase()
+console.log(myName.toUpperCase())
+
+// console.log(upperCase);
 // output=SARA
-// *جهت پاک کردن اسپیس پس و پیش یک کلمه
+
+// *جهت پاک کردن اسپیس پس و پیش یک استرینگ
+
 console.log( spacedName= '      sama      ')
 console.log(spacedName.trim())
 
 // *Argument برخی متدها داخل پرانتزشان مقادیر میگیرند که اینها را آرگیومنت می گویند
-let alphabet='abcdefg'
-console.log(alphabet.indexOf('c'))
+let alphabet='abcdefgc'
+console.log(alphabet.indexOf('c',2))
 // output = 2
 console.log(alphabet.indexOf('z'));
 // output = -1
@@ -210,31 +250,46 @@ console.log(favorit='my favorit sport is Chess. but i like Chess too.')
 console.log(favorit.replace('Chess', 'Yoga'))
 console.log(favorit.replaceAll("Chess", "Yoga"));
 
-//  استفاده می شود (مطالعه شخصی) RegExp برای جایگزین کردن باهم از
+//  استفاده می شود (مطالعه شخصی) RegExp برای  سرچ کردن از
 
 // * برای تکرار کردن
 console.log(myName.repeat(4))
 // output = SaraSaraSaraSara
 
-console.log(newUser='Rahman')
-// output=Rahman
-console.log(greeting='welcome '+newUser)
-// output=welcome Rahman
-// *backtick
-console.log((anothergreeting = `welcome ${newUser}`));
-// output=welcome Rahman
-console.log(anothergreeting=`welcome 'Rahman' and "sara"`)
-// welcome 'Rahman' and "sara"
 
 // *concatenate(add)
+console.log( familyName='Loghmani');
+let empty=' ';
+console.log((wholeName = myName + empty + familyName));
+
+console.log(newUser='Zahra')
+// output=Zahra
+console.log(greeting='welcome '+newUser)
+// output=welcome Zahra
+
+
+// *backtick
+console.log((anothergreeting = `welcome ${newUser}`));
+// output=welcome Zahra
+console.log(anothergreeting=`welcome 'Zahra' and "sara"`)
+// welcome 'Zahra' and "sara"
+
+// *Quiz
 console.log(sport='skateboard')
 // output=skateboard
-console.log(sport.slice(5).replace('o','e'))
+console.log(sport=sport.slice(5).replace("o", "e"));
 // output=beard
+
+
+
 // * Null  به صورت عمدی مقدار متغیری را نول قرار می دهیم تا بعدا آن را تغییر دهیم
-// * Undefined  این اروری ست که خود جاوا از کد میگیرد
+// * Undefined  این اروری ست که خود جاوااسکریپت از کد میگیرد
+let hisName=null;
+console.log(hisName);
 console.log(mySureName=null)
 // output=null
+
+
 
 // *Math Method
 // به صورت رندوم بین 0 تا 1 عددی را انتخاب می کند
@@ -246,14 +301,14 @@ console.log(Math.random()*100);
 // output=84.17731359986095
 
 // عدد را گرد می کند که در این عدد چون کمتر از 0.5 است به سمت پایین گرد شده اس
-console.log(Math.round(3.4))
+console.log(Math.round(3.6))
 // output=3
 
 // عدد را گرد می کند که در این عدد چون بیشتر از 0.5 است به سمت بالا گرد شده اس
-console.log(Math.round(3.6));
+// console.log(Math.round(3.6));
 // output=4
 
-console.log(Math.round())
+// console.log(Math.round())
 // output=NaN
 
 console.log(Math.round(Math.random()*95)+5);
@@ -261,10 +316,11 @@ console.log(Math.round(Math.random()*95)+5);
 
 console.log(Math.PI)
 // عدد پی
-console.log(Math.abs(-50))
+console.log(Math.abs(-5.6))
 // مثبت می کند
 
 console.log(Math.pow(2,3))
+console.log(2**3)
 
 
 
