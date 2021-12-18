@@ -89,28 +89,50 @@ this statement has not displaied on console*/
 
 
 // if statement
-let phrase = 'slow';
-if ( phrase === 'stop')
-{
-    console.log('red');
-    // this is a block code
-}else if(phrase === 'slow')
-{
-    console.log('yellow');
-}else if(phrase === 'go')
-{
-    console.log("green");
-}else{
-    console.log("purple");
-}
+// let phrase = 'slow';
+// if ( phrase === 'stop')
+// {
+//     console.log('red');
+//     // this is a block code
+// }else if(phrase === 'slow')
+// {
+//     console.log('yellow');
+// }else if(phrase === 'go')
+// {
+//     console.log("green");
+// }else{
+//     console.log("purple");
+// }
 
 
 
-let passWord = prompt('write your password');
-console.log(passWord = (passWord));
+// 
 
-if(passWord.length < 6){
-    console.log('Your password must be +6 characters');
-}else if (passWord.length >= 6){
-    if(passWord.indexOf(' ') !== -1)
-}
+
+/*
+Truthyness / Falsyness
+
+• False values:
+• False
+• 0
+• ”” (empty string)
+• Null
+• Undefined
+• NaN
+
+• Everything else is truthy
+*/
+
+
+
+/*
+Logical Operators
+And &&
+   • Both sides of 'and' , MUST be true to return true 
+   • If left side is false, js won‟t even look at the right-hand side
+Or || 
+   • Even if just one of the statements be true, returns true
+Not ! 
+   • !false //true 
+   • !true //false
+*/
