@@ -174,7 +174,7 @@ use square brackets to make array[]
 • Change the index ;) //we can not do it with strings!!!
 */
 
-// let students = ['mohammadhossein'.length , 'ali'[0] , ['manochehr' , 11 , NaN, 'sarah'] , 'anahid' , 'zahra']
+let students = ['mohammadhossein'.length , 'ali'[0] , ['manochehr' , 11 , NaN, 'sarah'] , 'anahid' , 'zahra']
 
 // console.log(students.includes('manochehr'));//true
 // console.log(students[0]);//mohammadhossein
@@ -183,7 +183,7 @@ use square brackets to make array[]
 // console.log(students.length);//5
 
 
-// Array method
+//* Array method
 /*push()
 adds one or more elements to the end of an array and
 returns the new length of the array.
@@ -315,11 +315,13 @@ they are equall.
 
 
 const arr = [1,2,3,4]
+console.log(arr.length = 8)
+// set array length to 8 while currently 4.
 
 arr.push('arad')
 
-arr[arr.length] = 'mohammad'
-// arr[2] = 'kian'
+arr[arr.length - 2] = 'sara'
+arr[2] = 'kian'
 
 // arr = [1,2,3,4]
 
