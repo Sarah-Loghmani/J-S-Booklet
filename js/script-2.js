@@ -136,3 +136,192 @@ Not !
    • !false //true 
    • !true //false
 */
+
+
+
+
+
+
+// let age = 66;
+
+// if(age <= 5 || age >= 65 ){
+//     console.log('free')
+// }else if(age > 5 && age <= 10){
+//     console.log(("10£"));
+// }else{
+//     console.log(( "20£"));
+// }
+
+
+
+
+
+// it is NOT important, just in case you see it anywhere
+//late on => DateFns library for handling dates and time
+
+
+// 
+
+
+/*
+Arrays
+Ordered collection of values 
+use square brackets to make array[]
+• .length
+• Index => [0]
+• Undefined ??
+• Chain array with strings //
+• Change the index ;) //we can not do it with strings!!!
+*/
+
+// let students = ['mohammadhossein'.length , 'ali'[0] , ['manochehr' , 11 , NaN, 'sarah'] , 'anahid' , 'zahra']
+
+// console.log(students.includes('manochehr'));//true
+// console.log(students[0]);//mohammadhossein
+// console.log(students[2][0][2]);//n
+// console.log(students)
+// console.log(students.length);//5
+
+
+// Array method
+/*push()
+adds one or more elements to the end of an array and
+returns the new length of the array.
+*/
+// console.log(students.push('mahdie' , 'motahareh' ))//7
+// console.log(students)
+
+// pop()
+/* removes the last element from end of an array and returns that element. 
+This method changes the length of the array.
+*/
+// console.log(theLastElement = students.pop())
+// console.log(students)
+
+// shift()
+/*removes the first element from start of an array and returns 
+that removed element. This method changes the length of the array.
+*/
+// console.log(theFirstElement = students.shift())
+// console.log(students)
+
+// unshift
+/*adds one or more elements to the start of an array and
+returns the new length of the array.
+*/
+// console.log(students.unshift("amir", undefined));//7
+// console.log(students)
+
+
+
+
+
+
+
+// let movies = ["Harry Potter", "12 angry men", 'A dog"s life', "dark coffee"];
+
+// let years = [1999, 1900, 1940, 2010, 1900];
+
+// let nums = [1, 2, 3];
+
+//$  concat
+/* is used to merge two or more arrays. 
+This method does not change the existing arrays, 
+but instead returns a new array.
+*/
+
+// let newArr = years.concat(movies, nums);
+// console.log(newArr)
+
+
+//$ includes
+// console.log(newArr.includes(1400))
+
+// if(!movies.includes("Harry Potter")){
+//     console.log('bad movie')
+// }else {
+//     console.log('good movie')
+// }
+
+
+//$ indexOf
+// console.log(movies.indexOf('nemo'))
+// console.log(newArr.indexOf('Harry Potter'))
+
+
+
+//! destructive
+//$ reverse
+// console.log(movies.reverse())
+// console.log(movies)
+
+
+
+//* not destructive
+//$   slice
+// console.log(newArr)
+// console.log(newArr.slice(4))
+// console.log(newArr)
+
+
+
+//! destructive
+// $ splice
+//  console.log(newArr)
+//  console.log(newArr.splice(1))
+//  console.log(newArr);//1999
+ 
+// newArr.splice(1, 0, "pulp fiction");
+// newArr.splice(4, 4, 'nemo')
+// console.log(newArr)
+
+
+
+// $  sort
+//DO NOT TELL ME, SORT DIDN'T WORK FOR MEEEEEEEE
+// const array1 = [1, 30, 4, 21, 100000, 15];
+// array1.sort();
+// console.log(array1);
+
+
+
+//* Array equality
+
+// 1, 2, 3, 4,
+// []
+// []
+// let a , b 
+
+// a = [1 ,2 ,3]
+// b = [1 ,2 ,3]
+
+// a = [];
+// b = [1, 2, 3, 4];
+// b = a;
+
+// console.log( a===b);
+
+// if (a === b) {
+//   console.log('it"s true');
+// } else {
+//   console.log("it's false");
+// }
+/* it looks to refrences if the refrences are assigned to each other 
+they are equall.
+*/
+
+// console.log(a);
+
+
+
+const arr = [1,2,3,4]
+
+arr.push('arad')
+
+arr[arr.length] = 'mohammad'
+// arr[2] = 'kian'
+
+// arr = [1,2,3,4]
+
+console.log(arr)
+
