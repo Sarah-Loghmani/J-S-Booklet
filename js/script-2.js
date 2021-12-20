@@ -314,16 +314,107 @@ they are equall.
 
 
 
-const arr = [1,2,3,4]
-console.log(arr.length = 8)
+// const arr = [1,2,3,4]
+// console.log(arr.length = 8)
 // set array length to 8 while currently 4.
 
-arr.push('arad')
+// arr.push('arad')
 
-arr[arr.length - 2] = 'sara'
-arr[2] = 'kian'
+// arr[arr.length - 2] = 'sara'
+// arr[2] = 'kian'
 
 // arr = [1,2,3,4]
 
-console.log(arr)
+// console.log(arr)
 
+
+
+
+
+// function declaration
+
+// function functionName (parameters){
+    //do something
+// }
+
+// function makeHeart() {
+//   console.log("<3");
+// }
+
+// makeHeart();
+// arguments
+// parameters are variebles that save the arguements inside themself.
+
+// function sum( num1, num2){
+//    console.log(num1 + num2);
+// }
+
+// sum(2, 6)
+
+// functions are hoisted and we can define them downer and execute(run) upper.
+
+
+
+
+
+// function greeting(age, firstName, lastName, role, ideas) {
+//   console.log(
+//     ` Hello ${firstName} ${lastName} . you are a part of APs and your role is ${role} and your age is ${age} and your ideas are : ${ideas} `
+//   );
+// }
+
+// greeting(23, "fatemeh", "nazari", "assistant", [
+//   "make a billion heart for annoying benyamin",
+//   "make DNA class for class b ",
+//   "hit pourya",
+// ]);
+
+
+// define
+   // function money(pence ){
+   //    console.log(`£ ${pence/100}`);
+   // }
+   // execute
+   // money( 199 )
+
+
+
+
+
+
+   // function double(num) {
+   //   console.log(num**2)
+
+   //   console.log("hii");
+   //   return num ** 2;
+   // }
+
+   // // double(10)
+
+
+
+   // const x = double(10)
+
+   // console.log(double(4))
+
+   // console.log(x + 10)
+
+   function random() {
+     const randomNum = Math.round(Math.random() * 100);
+
+     console.log(randomNum);
+
+   //   return randomNum;
+   }
+
+   const age = random();
+   console.log(age);
+   // • Value in a variable!
+
+   if (age > 50) {
+     console.log("kid");
+   } else {
+     console.log("young");
+   }
+   // • Return and if statements!!!
+   // • Only one value can be returned
